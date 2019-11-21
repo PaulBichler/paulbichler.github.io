@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="placeholder">
+    <meta name="keywords" content="placeholder, placeholder, placeholder">
+    <meta name="author" content="Bichler Paul">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="script.js"></script>
+    <title>Title</title>
+</head>
+<body>
+    <h1>Plot Trajectory</h1>
+
+    <table>
+        <tr>
+            <td>Start Position: &nbsp; &nbsp; &nbsp;</td>
+            <td>X<sub>0</sub>:</td>
+            <td><input type="text" id="x0" value="0" required> m</td>
+            <td>Y<sub>0</sub>:</td>
+            <td><input type="text" id="y0" value="0" required> m</td>
+        </tr>
+        <tr>
+            <td>Initial Velocity: &nbsp; &nbsp; &nbsp;</td>
+            <td>V<sub>x0</sub>:</td>
+            <td><input type="text" id="vx0" value="0" required> m/s &nbsp; &nbsp;</td>
+            <td>V<sub>y0</sub>:</td>
+            <td><input type="text" id="vy0" value="0" required> m/s &nbsp; &nbsp;</td>
+        </tr>
+        <tr>
+            <td>Acceleration: &nbsp; &nbsp; &nbsp;</td>
+            <td>a<sub>x</sub>:</td>
+            <td><input type="text" id="ax" value="0" required> <sup>m</sup>&frasl;<sub>s<sup>2</sup></sub></td>
+            <td>a<sub>y</sub>:</td>
+            <td><input type="text" id="ay" value="-9.8" required> <sup>m</sup>&frasl;<sub>s<sup>2</sup></sub></td>
+        </tr>
+        <tr>
+            <td>Stop on ground?</td><td></td>
+            <td><input type="checkbox" id="groundCheck" value="true" checked></td>
+        <tr>
+            <td>Interval:</td><td></td>
+            <td><input type="number" id="interval" value="0.1" step="0.1" min="0.1" required> s (minimum 0.1)</td>
+        </tr>
+        <tr>
+            <td>Iterations:</td><td></td>
+            <td><input type="number" id="iterations" value="10" step="1" min="1" max="50" required> (maximum 50)</td>
+        </tr>
+    </table>
+
+    <br>
+    <input type="submit" id="update" value="Update"><br><br>
+
+    <div style="max-width: 600px; max-height: 400px">
+        <canvas id="trajChart" width="600" height="400"></canvas>
+    </div>
+    <div id="trajResults">
+    </div>
+</body>
+</html>
