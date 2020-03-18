@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+body{
+    background-image: url("TemplateData/background.png");
+}
+p{
+    font-size: medium;
+    font-family: "Arial Black";
+    color: black;
+}
+
+    #text{
+        position: absolute;
+        margin-top: 0px;
+    }
+   .bgreen{
+       background-color:#4CAF50; /* Green */
+       border: none;
+       color: white;
+       padding: 16px 32px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       margin: 0px 0px 0px 770px;
+       transition: all 0.4s;
+       cursor: pointer;
+       height: 100px;
+       width: 250px;
+       border-radius: 12px;
+   }
+   .bgreen:hover {
+       background-color: rgba(230, 230, 230, 0.2);
+       color: #4caf50;
+
+   }
+
+   .image{
+       height: 105px;
+       width: 105px;
+       border-radius: 12px;
+   }
+
+    .para{
+    margin-top: 150px;
+        margin-left: 600px;
+
+
+    }
+
+.speech-bubble {
+    position: relative;
+    background: rgb(220, 220, 220);
+    border-radius: .4em;
+    margin-left: 420px;
+    top: 40px;
+    width:125px;
+}
+
+.speech-bubble:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: rgba(220,220,220,100);
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+
+
+</style>
+
+<script>
+
+function noPoverty() {
+    document.getElementById("text").innerHTML = "Éliminer la pauvreté sous toutes ses formes et partout dans le monde"
+}
+function zeroHunger() {
+    document.getElementById("text").innerHTML="Éliminer la faim, assurer la sécurité alimentaire, améliorer la nutrition et promouvoir une agriculture durable."
+}
+function health() {
+    document.getElementById("text").innerHTML="Donner aux individus les moyens de vivre une vie saine et promouvoir le bien-être à tous les âges."
+}
+function education() {
+    document.getElementById("text").innerHTML="Veiller à ce que tous puissent suivre une éducation de qualité dans des conditions d’équité et promouvoir les possibilités d’apprentissage tout au long de la vie."
+}
+function gender() {
+    document.getElementById("text").innerHTML="Réaliser l’égalité des sexes et autonomiser toutes les femmes et les filles."
+}
+function water() {
+    document.getElementById("text").innerHTML="Garantir l’accès de tous à l’eau et à l’assainissement et assurer une gestion durable des ressources en eau."
+}
+function energy() {
+    document.getElementById("text").innerHTML="Garantir l’accès de tous à des services énergétiques fiables, durables et modernes, à un coût abordable."
+}
+function economic() {
+    document.getElementById("text").innerHTML="Promouvoir une croissance économique soutenue, partagée et durable, le plein emploi productif et un travail décent pour tous."
+}
+function industry() {
+    document.getElementById("text").innerHTML="Mettre en place une infrastructure résiliente, promouvoir une industrialisation durable qui profite à tous et encourager l’innovation."
+}
+function reduIneq() {
+    document.getElementById("text").innerHTML="Réduire les inégalités entre les pays et en leur sein."
+}
+function communities() {
+    document.getElementById("text").innerHTML="Faire en sorte que les villes et les établissements humains soient ouverts à tous, sûrs, résilients et durables."
+}
+function consumption() {
+    document.getElementById("text").innerHTML="Établir des modes de consommation et de production durables."
+}
+function clima() {
+    document.getElementById("text").innerHTML="Prendre d’urgence des mesures pour lutter contre les changements climatiques et leurs répercussions."
+}
+function lifeWater() {
+    document.getElementById("text").innerHTML="Conserver et exploiter de manière durable les océans, les mers et les ressources marines aux fins du développement durable."
+}
+function lifeEarth() {
+    document.getElementById("text").innerHTML="Préserver et restaurer les écosystèmes terrestres."
+}
+function peace() {
+    document.getElementById("text").innerHTML="Promouvoir l’avènement de sociétés pacifiques et ouvertes aux fins du développement durable."
+}
+function partnership() {
+    document.getElementById("text").innerHTML="Partenariats pour la réalisation des objectifs."
+
+}
+
+
+</script>
+
+<body>
+<div>
+    <img class="image" onclick="noPoverty()"  src="17%20Object/1.jpg" alt="No Poverty" height="105" width="105" >
+    <img class="image"onclick="zeroHunger()" src="17%20Object/2.png" alt="Zero Hunger" height="105" width="105" >
+    <img class="image" onclick="health()" src="17%20Object/3.png" alt="Well Being" height="105" width="105" >
+    <img class="image" onclick="education()" src="17%20Object/4.jpg" alt="Education" height="105" width="105" >
+    <img class="image" onclick="gender()" src="17%20Object/5.png" alt="Equal" height="105" width="105" >
+    <img class="image" onclick="water()" src="17%20Object/6.png" alt="Water" height="105" width="105" >
+    <img class="image" onclick="energy()" src="17%20Object/7.png" alt="Energy" height="105" width="105" >
+    <img class="image" onclick="economic()" src="17%20Object/8.png" alt="Economy" height="105" width="105" >
+    <img class="image" onclick="industry()" src="17%20Object/9.jpg" alt="Industry" height="105" width="105" >
+    <img class="image" onclick="reduIneq()" src="17%20Object/10.jpg" alt="Reduced Inéquality" height="105" width="105" >
+    <img class="image" onclick="communities()" src="17%20Object/11.png" alt="Communities" height="105" width="105" >
+    <img class="image" onclick="consumption()" src="17%20Object/12.png" alt="Consumption" height="105" width="105" >
+    <img class="image" onclick="clima()" src="17%20Object/13.png" alt="Climate" height="105" width="105" >
+    <img class="image" onclick="lifeWater()" src="17%20Object/14.png" alt="Life below water" height="105" width="105" >
+    <img class="image" onclick="lifeEarth()" src="17%20Object/15.png" alt="Life on Earth" height="105" width="105" >
+    <img class="image" onclick="peace()" src="17%20Object/16.png" alt="Strong Institution" height="105" width="105">
+    <img class="image" onclick="partnership()" src="17%20Object/17.png" alt="Peace" height="105" width="105" >
+</div>
+
+<p id="text" ></p>
+<p class="para" >En septembre 2015, les 193 États membres de l'ONU ont adopté <br>
+    le programme de développement durable à l'horizon 2030, intitulé Agenda 2030.<br>
+    C'est un agenda pour les populations, pour la planète, pour la prospérité, <br>
+    pour la paix et par les partenariats.<br>
+    Il porte une vision de transformation de notre monde en éradiquant la pauvreté <br>
+    et en assurant sa transition vers un développement durable.<br>
+    Dans ce jeu vour recontrez plusieur problèmes,<br>
+    que vous devez resoudre pour sauver la terre.</p>
+
+<button class="bgreen" onclick="window.location.href='index.html' " style="font-size: 35px ;margin-top: 100px">Start Game</button>
+<div class="speech-bubble"><p id="start">Hi I'm Marlee</p></div>
+
+</body>
+</html>
