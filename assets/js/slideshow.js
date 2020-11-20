@@ -1,5 +1,5 @@
-    var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1];
-    var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9"];
+    var slideIndex = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+    var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4", "mySlides5", "mySlides6", "mySlides7", "mySlides8", "mySlides9", "mySlides10"];
     showDivs(1, 0);
     showDivs(1, 1);
     showDivs(1, 2);
@@ -9,6 +9,7 @@
     showDivs(1, 6);
     showDivs(1, 7);
     showDivs(1, 8);
+    showDivs(1, 9);
     
     function plusDivs(n, no) {
       showDivs(slideIndex[no] += n, no);
